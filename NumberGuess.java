@@ -53,14 +53,16 @@ try{
                
 
    @Test
-   public void testCheckName(){
-    assertEquals("", "", "Name given");
+   void testCheckName(){
+     var player = new NumberGuess();
+     assertEquals("", player, "Name given");
   
    }
 
    @Test
-   public void testIntegerEntered(){
-      assertEquals(20 , 20, "A number was entered.");
+   void testGame() throws Exception {
+     var guess = new NumberGuess();
+    assertEquals(guess,20);
    }
   
     
