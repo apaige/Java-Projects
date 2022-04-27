@@ -10,8 +10,7 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
         Student obj = (Student) context.getBean("Student");
-        Phone obj2 = (Phone) context.getBean("Phone");
-        Address obj3 = (Address) context.getBean("Address");
+         obj.getName();
 
 
     }
