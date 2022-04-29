@@ -6,19 +6,19 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <bean id = "Student" class="org.genSpark.Student">
-        <property name="id" value=""/>
-        <property name="name" value=""/>
-        <property name="ph" value=""/>
-        <property name="add" value=""/>
+        <property name="id" value="12345"/>
+        <property name="name" value="Leah"/>
+        <property name="ph" ref="Phone"/>
+        <property name="add" ref="Address"/>
     </bean>
     <bean id = "Phone" class="org.genSpark.Phone">
-        <property name ="mob" value=""/>
+        <property name ="mob" value="222-333-4444"/>
     </bean>
     <bean id="Address" class="org.genSpark.Address">
-        <property name="city" value=""/>
-        <property name="state" value=""/>
-        <property name="country" value=""/>
-        <property name="zipcode" value=""/>
+        <property name="city" value="Atlanta"/>
+        <property name="state" value="Ga"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="30349"/>
 </bean>
 
 </beans>

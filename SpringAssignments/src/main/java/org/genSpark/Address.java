@@ -1,10 +1,23 @@
 package org.genSpark;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address{
+    @Value("#{'New York City'}")
     private String city;
+    @Value("#{'NY'}")
     private String state;
+    @Value("#{'USA'}")
     private String country;
+    @Value("#{'11201'}")
     private String zipcode;
+
+
+    public Address(){
+
+    }
 
     public Address(String city, String state, String country, String zipcode) {
         this.city = city;
@@ -43,5 +56,15 @@ public class Address{
 
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
     }
 }
