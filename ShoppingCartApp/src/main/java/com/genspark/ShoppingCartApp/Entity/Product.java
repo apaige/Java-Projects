@@ -1,10 +1,11 @@
 package com.genspark.ShoppingCartApp.Entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="tbl_products")
-public class Product {
+public class Product implements Serializable {
 
     @Id
     @Column(name="p_id")

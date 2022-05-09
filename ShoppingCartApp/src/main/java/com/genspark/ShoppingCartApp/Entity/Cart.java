@@ -4,10 +4,11 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Table(name = "cart")
 public class Cart implements Serializable {
     @Id
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "prod_p_id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @OneToMany()
 
     private Product prod;
     private float total;

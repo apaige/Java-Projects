@@ -3,18 +3,20 @@ package com.genspark.ShoppingCartApp.Entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name="user")
 public class User {
     @Id
     private String name;
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "cart")
+    @Id
     private Cart cart;
 
     public User() {
     }
 
-    public User(String name, Cart cart) {
+    public User(String name) {
         this.name = name;
-        this.cart = cart;
     }
 
     public String getName() {

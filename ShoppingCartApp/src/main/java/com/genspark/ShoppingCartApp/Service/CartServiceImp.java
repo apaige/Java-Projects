@@ -1,6 +1,7 @@
 package com.genspark.ShoppingCartApp.Service;
 
 import com.genspark.ShoppingCartApp.Entity.Cart;
+import com.genspark.ShoppingCartApp.Entity.Product;
 import com.genspark.ShoppingCartApp.Repository.CartDoa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import java.util.Optional;
 public class CartServiceImp implements CartService {
 
     List<Cart> prods;
+    Product product;
 
     @Autowired
     private CartDoa cartDoa;

@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ShoppingCartAppWithSpringBoot" />
         <module name="WorkingWithSpring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ShoppingCartAppWithSpringBoot" target="1.7" />
       <module name="WorkingWithSpring" target="1.7" />
     </bytecodeTargetLevel>
   </component>
